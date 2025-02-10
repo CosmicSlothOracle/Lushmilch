@@ -8,14 +8,31 @@ import PortfolioItem from '@/components/PortfolioItem'
 const sampleProjects: Project[] = [
     {
         id: '1',
-        title: 'Project One',
-        description: 'Description of your first project',
+        title: 'E-commerce Platform',
+        description: 'A full-featured online store with shopping cart, user authentication, and payment processing',
         category: 'web',
-        images: ['/your-repo-name/projects/website1.png'],
+        images: ['https://link.storjshare.io/raw/juxgkwyd5lr42e4xl2kdaj555mlq/lushmilch/ecommerce.png'],
         technologies: ['React', 'TypeScript', 'Tailwind'],
         link: 'https://example.com'
     },
-    // Add at least 2 more projects to see the grid layout
+    {
+        id: '2',
+        title: 'Portfolio Website',
+        description: 'A responsive portfolio website showcasing creative work and professional experience',
+        category: 'web',
+        images: ['https://link.storjshare.io/raw/jxm76fwow7ib5i5vgbpg67assisq/lushmilch/website1.png'],
+        technologies: ['Next.js', 'Node.js', 'MongoDB'],
+        link: 'https://example.com'
+    },
+    {
+        id: '3',
+        title: 'Other Projects',
+        description: 'Various other web development and design projects including landing pages and web applications',
+        category: 'web',
+        images: ['https://link.storjshare.io/raw/juhnga4inz4vv2jn7rdvso7w3hnq/lushmilch/other-images.png'],
+        technologies: ['React Native', 'Firebase', 'Redux'],
+        link: 'https://example.com'
+    }
 ]
 
 export default function Home() {
@@ -66,7 +83,7 @@ export default function Home() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {sampleProjects.map((project, index) => (
                                 <PortfolioItem
-                                    key={project.id}
+                                    key={project.title}
                                     project={project}
                                     index={index}
                                 />
