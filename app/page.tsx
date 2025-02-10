@@ -8,15 +8,14 @@ import PortfolioItem from '@/components/PortfolioItem'
 const sampleProjects: Project[] = [
     {
         id: '1',
-        title: 'My Cool Website',
-        description: 'A website I built for a client',
+        title: 'Project One',
+        description: 'Description of your first project',
         category: 'web',
-        images: ['/projects/website1.jpg'],  // This path points to public/projects/website1.jpg
-        technologies: ['React', 'CSS', 'JavaScript'],
-        link: 'https://myproject.com'
+        images: ['/projects/website1.png'], // Changed from .jpg to .png
+        technologies: ['React', 'TypeScript', 'Tailwind'],
+        link: 'https://example.com'
     },
-    // Copy and paste this structure for each project
-    // Just change the values
+    // Add at least 2 more projects to see the grid layout
 ]
 
 export default function Home() {
