@@ -11,7 +11,7 @@ const sampleProjects: Project[] = [
         title: 'Project One',
         description: 'Description of your first project',
         category: 'web',
-        images: ['/projects/website1.png'], // Changed from .jpg to .png
+        images: ['/your-repo-name/projects/website1.png'],
         technologies: ['React', 'TypeScript', 'Tailwind'],
         link: 'https://example.com'
     },
